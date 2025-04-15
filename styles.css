@@ -3,7 +3,8 @@
     src: url(fonts/Type\ Machine.ttf);
 }
 body{
-    overflow: hidden;
+   overflow-x:hidden;
+    overscroll-behavior: initial;
 }
 .homepage{
     position: absolute;
@@ -57,22 +58,22 @@ body{
     filter: brightness(70%);
 }
 #pictured{
-    width: 140%;
+    width: 150%;
 }
-#ankole_logox{
-    width: 20%;
+#ankole_logod{
+    width: 30%;
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
 }
-.textex{
+.texted{
     position: absolute;
     color: rgba(128, 128, 128, 0.559);
     font-family: typewriter;
     font-size: 60px;
-    top: 45%;
-    left: 50%;
+    top: 40%;
+    left: 75%;
     transform: translate(-50%, -50%);
 }
 .text{
@@ -107,17 +108,12 @@ a{
     text-decoration: none;
     color: white;
 }
-.fa-bars{
+.icons_home{
     color: rgba(128, 128, 128, 0.559);
     font-size: 25px;
     margin-left: 5%;
     margin-top: 3%;
-}
-.fa-clock{
-    color: rgba(128, 128, 128, 0.559);
-    font-size: 25px;
-    margin-left: 5%;
-    margin-top: 3%;
+    gap:3%;
 }
 #reservations{
     background-color: rgba(190, 174, 174, 0.921);
@@ -146,7 +142,7 @@ a{
 }
 .contact_info{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     position: absolute;
     width: 60%;
@@ -176,11 +172,32 @@ a{
     width: 110%;
     padding: 4%;
 }
+.home_navbar_contacts{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+     position: absolute;
+     display: flex;
+     top: 80%;
+     left: 48%;
+     width: 60%;
+     gap: 1%;
+     font-size: 19px;
+     transform: translate(-50%, -50%);
+}
+.icon_contacts{
+    color: rgba(128, 128, 128, 0.559);
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 3%;
+    gap: 3%;
+}
 .live_background{
     width: 100%;
     height: 800px;
     background-image: url(images/liveeankole-grill-kilimani.jpg);
     background-size: cover;
+    background-repeat: repeat-y;
     filter: blur(4px);
     -webkit-filter: blur(10px);
 
@@ -233,6 +250,25 @@ a{
     left: 25%;
     transform: translate(-50%, -50%);
 }
+.home_navbar_live{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+     position: absolute;
+     display: flex;
+     top: 85%;
+     left: 48%;
+     width: 60%;
+     gap: 1%;
+     font-size: 19px;
+     transform: translate(-50%, -50%); 
+}
+.icons_live{
+    color: rgba(128, 128, 128, 0.559);
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
 .events_background{
     display: flex;
 }
@@ -267,7 +303,7 @@ a{
   }
   .events{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -289,6 +325,325 @@ a{
     font-family: typewriter;
     font-size: 20px;
   }
+  .home_navbar_events{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+     position: absolute;
+     display: flex;
+     top: 85%;
+     left: 48%;
+     width: 60%;
+     gap: 1%;
+     font-size: 19px;
+     transform: translate(-50%, -50%); 
+  }
+  .icons_events{
+    color: rgba(128, 128, 128, 0.559);
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 3%;
+    gap: 3%;
+  }
+  .menu_background{
+    display: flex;
+    filter: brightness(70%);
+  }
+  #kilimani_menu{
+    width: 50%;
+    height: 800px;
+    background-image: url(images/_ankole_kilimani_nightlife.jpg);
+    background-size: cover;
+  }
+  #kitisuru_menu{
+    width: 50%;
+    height: 800px;
+    background-image: url(images/locationshts.jpg);
+    background-size: cover;
+    position: fixed;
+  }
+  .menus{
+    display: flex;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 30%;
+  }
+  #karibu{
+    color: rgb(220, 92, 7);
+    font-family: typewriter;
+    font-size: 25px;
+  }
+  .menus h1{
+    font-size: 50px;
+  }
+  .menu_text{
+    font-family: typewriter;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 25%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+  }
+  .men{
+    color: rgba(255, 255, 255, 0.696);
+  }
+  .menu_text h1{
+    color: rgb(220, 92, 7);
+    font-size: 50px;
+  }
+  #menu_logo{
+    width: 15%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  .home_navbar_menu{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+     position: absolute;
+     display: flex;
+     top: 80%;
+     left: 48%;
+     width: 60%;
+     gap: 1%;
+     font-size: 19px;
+     transform: translate(-50%, -50%); 
+  }
+  .menu_pic{
+    background-image: url(images/menupic.jpg);
+    filter: brightness(60%);
+    width: 50%;
+    height: 720px;
+  }
+  .home_navbar_kilmenu{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+     position: absolute;
+     display: flex;
+     top: 85%;
+     left: 20%;
+     width: 60%;
+     font-size: 19px;
+     transform: translate(-50%, -50%); 
+  }
+  .topnav{
+    color: white;
+    font-family: typewriter;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    left: 100%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+  }
+  .menu_nav{
+    list-style: none;
+    display: flex;
+    gap: 1%;
+  }
+  .menu_nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .menu_nav a:hover {
+    color: rgb(235, 119, 42);
+  }
+  .menu_nav a.active {
+    color: rgb(235, 119, 42);
+  }
+  .menu_list{
+    color: white;
+    font-family: typewriter;
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    top: 220%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+   
+  
+  }
+  .price p{
+    color: white;
+    font-family: typewriter;
+  }
+  .breakfast_time{
+    text-align: left;
+    font-size: 13px;
+    margin-top: 6%;
+  }
+  .breakfast_time p {
+    font-size:18px ;
+    color: gray;
+  }
+  #coffee{
+    color: rgb(195, 78, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .breakfast_items{
+    font-size:20px ;
+  }
+  .break_drinks{
+    display: flex;
+    gap: 20%;
+
+  }
+  .breakfast_description{
+    text-align: left;
+  }
+  .break{
+    display: flex;
+    gap: 2%;
+  }
+  .break h1{
+    font-size: 20px;
+  }
+  .break p{
+    font-size: 15px;
+  }
+  #foods_logo{
+    width: 8%;
+  }
+  .break_main{
+    font-size: 10px;
+    text-align: left;
+  }
+  #ex{
+    color: rgb(195, 78, 0);
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+  }
+  .break_extra{
+    display: flex;
+    text-align: left;
+    gap: 25%;
+  }
+  #soup{
+    color: rgb(195, 78, 0);
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 43%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  .foods h1{
+   text-align: left;
+  }
+  .west_mbuzi{
+    display: flex;
+    gap: 20%;
+     text-align: left;
+  }
+  .cream_mbuzi{
+    display: flex;
+    gap: 10%;
+    text-align: left;
+  }
+  .salads_main{
+    font-size: 10px;
+    text-align: left;
+    margin-left: -2%;
+  }
+  .salad{
+    display: flex;
+    gap: 2%;
+  }
+  .salad h1{
+    font-size: 20px;
+  }
+  .salad p{
+    font-size: 15px;
+  }
+  #salad{
+    color: rgb(195, 78, 0);
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 49%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  #dressings{
+    text-align: left;
+  }
+  #s_n_s{
+    color: rgb(220, 92, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .sides_n_sauces{
+    text-align: left;
+  }
+  .drink{
+    display: flex;
+  }
+  #yoghurt{
+    color: rgb(220, 92, 7);
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .y_smoothies{
+    display: flex;
+    text-align: left;
+    gap: 20%;
+  }
+  #water{
+    color: rgb(220, 92, 7);
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .wa_soda{
+    display: flex;
+    text-align: left;
+    gap: 22%;
+  }
+  .hh_drinks{
+    font-size: 10px;
+    text-align: left;
+    margin-left: -2%;
+  }
+  .h_drink{
+    display: flex;
+    gap: 2%;
+    text-align: left;
+  }
+  .h_drink h1{
+    font-size: 20px;
+  }
+  .h_drink p{
+    font-size: 15px;
+  }
+  .happy_hour p{
+    text-align: left;
+  }
+  #h_hour{
+    font-size: 30px;
+  }
+  
   @media screen and (max-width:350px){
     body {
       margin: 0;
@@ -296,6 +651,7 @@ a{
       padding: 0;
       position: relative;
       height: 100%;
+background-color: black;
   }
 
 }
@@ -306,6 +662,7 @@ a{
       position: relative;
       height: 100%;
       width: 100%;
+     background-color: black;
   }
   }
 
@@ -315,6 +672,7 @@ a{
       padding: 0;
       height: 100%;
       width: 100%;
+     background-color: black;
   }
   }
 
@@ -325,6 +683,7 @@ a{
       position: relative;
       height: 100%;
       width: 100%;
+     background-color: black;
   }
   }
 
@@ -335,5 +694,6 @@ a{
       position: relative;
       height: 100%;
       width: 100%;
+     background-color: black;
   }
 }
