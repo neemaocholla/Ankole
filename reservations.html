@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="reservations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/Ankole-Grill-Logo.jpg">
+</head>
+<body>
+    <div class="reserve">
+        <div class="left_side">
+            <div class="me"></div>
+            <img src="images/ankole_logo.svg" alt="" id="reservations_logo">
+            <div class="reservations_text">
+                <h1><span class="res_kar">Karibu</span><br>Reservations</h1>
+        </div>
+        <div class="form">
+            <label for="first_name"> Name</label><br>
+            <input id="first_name" placeholder="Enter your first name" type="text" required><br><br>
+            <label for="location">Location</label><br>
+            <input id="location" placeholder="Kitisuru(Open 9am - Closes 11pm)" type="text" required><br><br>
+            <label for="email">Email Address</label><br>
+            <input id="email"placeholder="e.ginfo@email.com" type="email" required><br><br>
+            <label for="telephone">Tell/Cell</label><br>
+            <input id="telephone" placeholder="e.g 0700 000 000" type="phonenumber" required><br><br>
+            <label for="number_of_guests">Number of Guests</label><br>
+            <input type="number" id="numbermax" name="numbermin" min="8" placeholder="(maximum of 8 guests only)" required><br><br>
+            <label for="date">Date</label><br>
+            <input type="date"id="date" required><br><br>
+            <label for="time">Time</label><br>
+            <input type="time" id="time"><br><br>
+            <button type="submit" id="buttonr">Submit</button>
+    </div>
+    </div>
+</body>
+</html>

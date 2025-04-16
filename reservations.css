@@ -1,0 +1,44 @@
+@font-face {
+    font-family:typewriter;
+    src: url(fonts/Type\ Machine.ttf);
+}
+.reserve{
+    
+}
+.left_side{
+  background-image: url(images/reservations.jpg);
+  width: 50%;
+  height: 800px;
+  filter: brightness(60%);
+}
+.form{
+ color: white;
+  font-family: typewriter;
+  position: absolute;
+  width: 95%;
+  top: 46%;
+  left: 150%;
+  padding: 3%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  
+}
+.form input{
+width: 80%;
+padding: 2%;
+background-color: black;
+color: white;
+}
+#date{
+color: white;
+}
+#time{
+color: white;
+}
+#buttonr{
+padding: 3%;
+border-radius: 10px;
+background-color: rgb(237, 206, 168);
+width: 86%;
+text-align:center;
+}
