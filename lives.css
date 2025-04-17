@@ -39,12 +39,39 @@ body{
 }
 .fadhilee{
     display: flex;
+    gap: 6%;
+}
+
+.fadhilee img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fadhilee img:hover {
+    transform: scale(1.2);
 }
 .them_mushrooms{
     display: flex;
+    gap: 6%;
+}
+
+.them_mushrooms img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.them_mushrooms img:hover {
+    transform: scale(1.2);
 }
 .jack{
     display: flex;
+    gap: 6%;
+}
+
+.jack img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.jack img:hover {
+    transform: scale(1.2);
 }
 .tukatike{
     color: white;
