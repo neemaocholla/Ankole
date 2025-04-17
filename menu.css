@@ -1,13 +1,17 @@
-body{
-    
-}
 @font-face {
   font-family:typewriter;
   src: url(fonts/Type\ Machine.ttf);
 }
+@font-face {
+  font-family: conso;
+  src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body{
+overflow: hidden;
+}
 .menu_background{
     display: flex;
-    filter: brightness(70%);
+    filter: brightness(60%);
   }
   #kilimani_menu{
     width: 50%;
@@ -45,31 +49,86 @@ body{
   }
   .home_navbar_menu{
     background-color: black;
-    color: white;
-    border-radius: 30px;
-     position: absolute;
-     display: flex;
-     top: 80%;
-     left: 48%;
-     width: 60%;
-     gap: 1%;
-     font-size: 19px;
-     transform: translate(-50%, -50%); 
+      color: white;
+      border-radius: 30px;
+       position: absolute;
+       display: flex;
+       top: 85%;
+       left: 50%;
+       width: 47%;
+       font-size: 15px;
+       font-family: conso;
+       transform: translate(-50%, -50%); 
+       position: fixed;
+    }
+    .options{
+      display: flex;
+      list-style: none;
+      gap: 10%;
+      margin-top: 3%;
   }
-  .options{
-    display: flex;
-    list-style: none;
-    gap: 10%;
-    margin-top: 3%;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  #reservations{
+      background-color: rgba(190, 174, 174, 0.921);
+      border-radius: 30px;
+      width: 30%;
+      height: 75%;
+      padding: 1%;
+  }
   .icons_menu{
-    color: rgba(128, 128, 128, 0.559);
-    font-size: 25px;
-    margin-left: 5%;
-    margin-top: 3%;
-    gap: 3%;
+      color: rgba(128, 128, 128, 0.559);
+      font-size: 20px;
+      margin-left: 5%;
+      margin-top: 3%;
   }
+  @media screen and (max-width:350px){
+    body {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      position: relative;
+      height: 100%;
+  }
+
+}
+  @media screen and (min-width: 351px) and (max-width: 580px) {
+    body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 100%;
+      width: 100%;
+  }
+  }
+
+  @media screen and (min-width: 581px) and (max-width: 740px) {
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+  }
+  }
+
+  @media screen and (min-width: 741px) and (max-width: 1040px) {
+    body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 100%;
+      width: 100%;
+  }
+  }
+
+  @media screen and  (min-width: 1041px) {
+    body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 100%;
+      width: 100%;
+  }
+}

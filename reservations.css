@@ -1,44 +1,172 @@
 @font-face {
-    font-family:typewriter;
-    src: url(fonts/Type\ Machine.ttf);
+  font-family:typewriter;
+  src: url(fonts/Type\ Machine.ttf);
 }
-.reserve{
-    
+@font-face {
+  font-family: conso;
+  src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body{
+ overflow: hidden;
 }
 .left_side{
-  background-image: url(images/reservations.jpg);
-  width: 50%;
-  height: 800px;
-  filter: brightness(60%);
+  background-image: url(images/eaedaaf7ca25a801b94501fbdd1163areserve7.jpg);
+  width: 45%;
+  height: 790px;
+  filter: brightness(70%);
+}
+#reservations_logo{
+  width: 30%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 20%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.reservations_text{
+  font-family: typewriter;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.res_kar{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+.reservations_text h1{
+  color: rgb(220, 92, 7);
+    font-size: 60px;
 }
 .form{
- color: white;
+  color: white;
   font-family: typewriter;
   position: absolute;
-  width: 95%;
-  top: 46%;
-  left: 150%;
-  padding: 3%;
+  width: 80%;
+  height: 800px;
+  padding: 1%;
+  top: 54%;
+  margin-left: 150%;
   transform: translate(-50%, -50%);
-  background-color: black;
+  overflow: scroll;
   
 }
 .form input{
-width: 80%;
+width: 120%;
 padding: 2%;
 background-color: black;
 color: white;
 }
+
 #date{
 color: white;
 }
+
 #time{
 color: white;
 }
-#buttonr{
+
+#button{
 padding: 3%;
 border-radius: 10px;
-background-color: rgb(237, 206, 168);
+background-color: rgb(246, 203, 161);
 width: 86%;
-text-align:center;
+text-align: center;
+}
+#button:hover{
+ background-color: rgb(244, 168, 92);
+}
+.home_navbar_reservations{
+  background-color: black;
+    color: white;
+    border-radius: 30px;
+     position: absolute;
+     display: flex;
+     top: 85%;
+     left: 22%;
+     width: 45%;
+     font-size: 14px;
+     font-family: conso;
+     transform: translate(-50%, -50%); 
+     position: fixed;
+  }
+  .options{
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin-top: 3%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#reservations{
+    background-color: rgba(190, 174, 174, 0.921);
+    border-radius: 30px;
+    width: 30%;
+    height: 75%;
+    padding: 1%;
+}
+.icons_reservations{
+    color: rgba(128, 128, 128, 0.559);
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+@media screen and (max-width:350px){
+  body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    background-color: black;
+}
+
+}
+@media screen and (min-width: 351px) and (max-width: 580px) {
+  body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+}
+
+@media screen and (min-width: 581px) and (max-width: 740px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+}
+
+@media screen and (min-width: 741px) and (max-width: 1040px) {
+  body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+    
+}
+}
+
+@media screen and  (min-width: 1041px) {
+  body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
 }
