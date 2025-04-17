@@ -11,7 +11,7 @@ overflow: hidden;
 }
 .menu_background{
     display: flex;
-    filter: brightness(60%);
+    filter: brightness(40%);
   }
   #kilimani_menu{
     width: 50%;
@@ -20,11 +20,17 @@ overflow: hidden;
     background-size: cover;
     
   }
+  .kilimanimenu a:hover {
+    color: rgba(237, 116, 35, 0.88);
+  }
   #kitisuru_menu{
     width: 50%;
     height: 800px;
     background-image: url(images/locationshts.jpg);
     background-size: cover;
+  }
+  .kitisurumenu a:hover {
+    color: rgba(237, 116, 35, 0.88);
   }
   .menus{
     display: flex;
@@ -34,10 +40,10 @@ overflow: hidden;
     position: absolute;
     width: 100%;
     top: 40%;
-    left: 75%;
+    left: 70%;
     transform: translate(-50%, -50%);
     display: flex;
-    gap: 30%;
+    gap: 35%;
   }
   #karibu{
     color: rgb(220, 92, 7);
@@ -78,11 +84,25 @@ overflow: hidden;
       height: 75%;
       padding: 1%;
   }
+  #reservations a:hover {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    width: 32%;
+    height: 76%;
+    padding: 4%;
+   }
   .icons_menu{
       color: rgba(128, 128, 128, 0.559);
       font-size: 20px;
       margin-left: 5%;
       margin-top: 3%;
+  }
+  .options a:hover {
+    color: rgba(220, 211, 205, 0.418);
+  }
+  .options a.active {
+   background-color: rgba(220, 211, 205, 0.418);
   }
   @media screen and (max-width:350px){
     body {

@@ -9,6 +9,37 @@
 body{
  
 }
+.slideContainer {
+  max-width: 600px;
+  margin: 10px;
+  position: relative;
+  margin: auto;
+}
+.customer {
+  color: rgb(199, 136, 136);
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+prev, .next {
+  position: absolute;
+  top : 50%;
+  width: auto;
+  padding: 10px;
+  color: rgba(128, 128, 128, 0.559);
+  font-weight: bolder;
+  font-size: 18px;
+}
+.next {
+  right: 40px;
+}
+.prev {
+  left: 40px;
+}
   #reviews_logo{
     margin-left: 35%;
     width: 30%;
@@ -44,12 +75,29 @@ body{
       height: 75%;
       padding: 1%;
   }
+  #reservations a:hover {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    width: 32%;
+    height: 76%;
+    padding: 4%;
+   }
   .icons_reviews{
       color: rgba(128, 128, 128, 0.559);
       font-size: 20px;
       margin-left: 5%;
       margin-top: 3%;
   }
+  .options a:hover {
+    color: rgba(220, 211, 205, 0.418);
+  }
+  .options a.active {
+   background-color: rgba(220, 211, 205, 0.418);
+  }
+
+
+
   @media screen and (max-width:350px){
     body {
       margin: 0;
@@ -58,6 +106,9 @@ body{
       position: relative;
       height: 100%;
   }
+  .prev, .next, .customer {
+    font-size: 16px;
+ }
 
 }
   @media screen and (min-width: 351px) and (max-width: 580px) {
@@ -68,6 +119,9 @@ body{
       height: 100%;
       width: 100%;
   }
+  .prev, .next, .customer {
+    font-size: 16px;
+ }
   }
 
   @media screen and (min-width: 581px) and (max-width: 740px) {
@@ -77,6 +131,9 @@ body{
       height: 100%;
       width: 100%;
   }
+  .prev, .next, .customer {
+    font-size: 16px;
+ }
   }
 
   @media screen and (min-width: 741px) and (max-width: 1040px) {
@@ -87,6 +144,9 @@ body{
       height: 100%;
       width: 100%;
   }
+  .prev, .next, .customer {
+    font-size: 16px;
+ }
   }
 
   @media screen and  (min-width: 1041px) {
@@ -97,4 +157,7 @@ body{
       height: 100%;
       width: 100%;
   }
+  .prev, .next, .customer {
+    font-size: 16px;
+ }
 }

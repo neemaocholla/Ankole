@@ -9,25 +9,25 @@
     <link rel="icon" type="image/x-icon" href="images/Ankole-Grill-Logo.jpg">
 </head>
 <body>
-    <div class="slideshow-container">
-        <img src="images/ankole_logo.svg" alt="" id="reviews_logo">
-    <div class="reviews">
+    <div class="slideContainer">
+        <!-- <img src="images/ankole_logo.svg" alt="" id="reviews_logo"> -->
+    <div class="slide">
         <h1>Reviews</h1>
         <q>This place is run by educated,innovative & creative people!The architectural layout,seating,ambience,<br>lighting,cutlery:serving,designs;has been impeccably well thought out!Even the washrooms were<br>excellent!The food was AWESOME!This is surprising considering the fact we were there on a Saturday night<br>& they almost had no space!We were extremely well serviced too!Rare to find such finnese in Kenya!You<br>must go visit them! </q>
         <p class="customer">irfan virji<span>KITISURU</span>
         </p>
       </div>
-      <div class="reviews">
+      <div class="slide">
         <h1>Reviews</h1>
         <q>Such a fantastic restaurant,I plan on being a regular here.The food is amazing the atmosphere is so nice and<br> the service is exceptional. I pray you are able to visit them at least once so you can understand what I'm saying.<br>10/10.Recommend dishes:Steak must go visit them!</q>
         <p class="customer">Paul Kamau<br>KITISURU</p>
       </div>
-      <div class="reviews">
+      <div class="slide">
         <h1>Reviews</h1>
         <q>Best place to eat out.If you want to have a nice,romantic date this place is perfect.The food is fantastic only<br>be careful the portions are bigger than you would expect.</q>
         <p class="customer">Vladimiro Stivali <span>KITISURU</span></p>
       </div>  
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10095;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
       <div class="home_navbar_reviews">
@@ -44,6 +44,34 @@
             <li><a href="contacts.html">Contacts</a></li>
             <li id="reservations"><a href="reservations.html">Reservations</a></li>
         </ul>
-    </div>         
+    </div>
+    <script>
+      document.querySelector(".prev").addEventListener("click", () => {
+         changeSlides(-1);
+      });
+      document.querySelector(".next").addEventListener("click", () => {
+         changeSlides(1);
+      });
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function changeSlides(n) {
+         showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+         showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("Slide");
+         if (n > slides.length) {
+            slideIndex = 1;
+         }
+         if (n < 1) {
+            slideIndex = slides.length;
+         }
+         Array.from(slides).forEach(item => (item.style.display = "none"));
+         slides[slideIndex - 1].style.display = "block";
+      }
+   </script>       
 </body>
 </html>
