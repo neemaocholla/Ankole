@@ -9,11 +9,53 @@
     <link rel="icon" type="image/x-icon" href="images/Ankole-Grill-Logo.jpg">
 </head>
 <body>
+  <div class="reviews-section">
+    <img src="images/ankole_logo.svg" alt="" id="reviews_logo">
+    <h1>Reviews</h1>
+    <i class="fa-solid fa-quote-left"></i>
+    <div class="carousel">
+      <div class="review-slide active">
+        <p>Best place to eat out.If you want to have a nice romantic date to this place is perfect.The food is fantastic only be careful because the portions are bigger than you would expect </p>
+        <span>Vladimiro Stivali <br>KITISURU</span>
+      </div>
+      <div class="review-slide">
+        <p>Ankole Grill is indeed a recommendable restaurant.Beautiful location along with excellent and friendly staff and very nice dishes.Also recommend for those who like Kenyan-style cuisine!</p>
+        <span>Stephan Hofer <br>KITISURU</span>
+      </div>
+      <div class="review-slide">
+        <p>Great customer experience and the food was nothing short of amazing!You are assured to get value for your money that's for sure!Planning to go back again!</p>
+        <span>Sharon Chebaibai <br>KILIMANI</span>
+      </div>
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+    <i class="fa-solid fa-quote-right"></i>
+  </div>
+
+  <script src="reviews.js"></script>
+
+
       <div class="home_navbar_reviews">
-        <div class="icons_reviews">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-clock"></i>
-        </div>
+        <div class="icons">
+            <div class="dropup">  <i class="fa-solid fa-bars"></i>
+              <ul class="dropuplist">
+                <li><a href="index.html">Home</a></li><hr>
+                <li><a href="menu.html">Menu</a></li><hr>
+                <li><a href="reviews.html">Reviews</a></li><hr>
+                <li><a href="events.html">Events</a></li><hr>
+                <li><a href="live.html">Live</a></li><hr>
+                <li><a href="contacts.html">Contacts</a></li><hr>
+                <li><a href="reservations.html">Reservations</a></li>
+              </ul>
+              </div>
+              <div class="openhours"><i class="fa-solid fa-clock"></i>
+                <span class="openhourstext">
+                    <h1>Opening hours</h1>
+                    <p><span id="branch">Kitisuru</span><br>Mon-Sun<br>9.00am-11.00pm</p>
+                    <p><span id="branch">Kilimani</span><br>Mon-Sun<br>7.30am-11.00pm</p>
+                </span>
+                </div>
+                </div>
         <ul class="options">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
