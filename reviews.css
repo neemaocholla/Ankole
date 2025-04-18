@@ -198,7 +198,6 @@ button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-
   @media screen and (max-width:350px){
     body {
       margin: 0;
