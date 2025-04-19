@@ -34,7 +34,10 @@ body{
 .acoustic{
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 22px;  margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 
 }
 .fadhilee{
@@ -206,7 +209,7 @@ a{
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-@media screen and (max-width:350px){
+@media screen and (max-width:600px){
     body {
       margin: 0;
       width: 100%;
@@ -216,7 +219,7 @@ a{
   }
 
 }
-  @media screen and (min-width: 351px) and (max-width: 580px) {
+  @media screen and (min-width: 601px) and (max-width: 768px) {
     body {
       margin: 0;
       padding: 0;
@@ -226,16 +229,7 @@ a{
   }
   }
 
-  @media screen and (min-width: 581px) and (max-width: 740px) {
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-  }
-  }
-
-  @media screen and (min-width: 741px) and (max-width: 1040px) {
+  @media screen and (min-width: 769px){
     body {
       margin: 0;
       padding: 0;
@@ -245,13 +239,3 @@ a{
       
   }
   }
-
-  @media screen and  (min-width: 1041px) {
-    body {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      height: 100%;
-      width: 100%;
-  }
-}
