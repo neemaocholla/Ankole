@@ -200,36 +200,30 @@ overflow: hidden;
   }
   .fa-instagram{
     color: white;
-    border: solid 1px;
     width: 1%;
     height: 2%;
     padding: 1%;
-    border-radius: 50%;
      position: fixed;
-     margin-top: 1%;
-     left: 95%;
+     margin-top: 1.5%;
+     left: 93%;
      z-index: 1;
      font-size: 20px;
   }
   .fa-facebook-f{
     color: white;
-    border: solid 1px ;
     padding: 1.2%;
-    border-radius: 50%;
      position: fixed;
      width: 1%;
-     margin-top: 1%;
+     margin-top: 1.2%;
      left: 90%;
      z-index: 1;
      font-size: 20px;
   }
   .fa-whatsapp{
     color: white;
-    border: solid 1px ;
     padding: 2px;
     padding-left: 0.4%;
      position: fixed;
-     border-radius: 50%;
      width: 2%;
      height: 5%;
      bottom: 10%;
