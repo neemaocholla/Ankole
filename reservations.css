@@ -194,6 +194,7 @@ a{
       padding: 0;
       position: relative;
       height: 100%;
+      background-color: black;
   }
   .reservations_text h1{
     font-size: 28px;
@@ -219,6 +220,7 @@ a{
       position: relative;
       height: 100%;
       width: 100%;
+      background-color: black;
   }
   .left_side{
     height: 40vh;
@@ -267,6 +269,7 @@ a{
       position: relative;
       height: 100%;
       width: 100%;
+      background-color: black;
   }
   .reserve{
     flex-direction: column;
